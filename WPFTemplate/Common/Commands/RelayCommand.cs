@@ -12,7 +12,7 @@ namespace WPFTemplate.Common.Commands
         {
             if (execute == null)
             {
-                throw new NullReferenceException("Method given to command is cannot be null");
+                throw new NullReferenceException("Method given to command cannot be null");
             }
 
             _execute = execute;
