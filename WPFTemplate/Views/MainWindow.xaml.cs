@@ -12,7 +12,7 @@ namespace WPFTemplate.Views
         {
             InitializeComponent();
 
-            DataContext = new MainWindowViewModel(this);
+            DataContext = new MainViewModel(this);
         }
     }
 }

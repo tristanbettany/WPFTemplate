@@ -3,13 +3,13 @@ using WPFTemplate.Common.ViewModels;
 
 namespace WPFTemplate.ViewModels
 {
-    public class MainWindowViewModel : BaseViewModel
+    public class MainViewModel : BaseViewModel
     {
         private Window _window;
 
         public string HelloWorld { get; set; } = "Hello World";
 
-        public MainWindowViewModel(Window window)
+        public MainViewModel(Window window)
         {
             _window = window;
         }
