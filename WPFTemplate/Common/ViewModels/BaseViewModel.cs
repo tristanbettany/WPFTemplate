@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel;
 
-namespace WPFTemplate.Common
+namespace WPFTemplate.Common.ViewModels
 {
-    public class ObservableObject : INotifyPropertyChanged
+    public class BaseViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected void OnPropertyChanged(string propertyName)
+        protected virtual void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
