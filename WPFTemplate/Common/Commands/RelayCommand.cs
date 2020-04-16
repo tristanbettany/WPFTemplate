@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 namespace WPFTemplate.Common.Commands
 {
-    class RelayCommand : ICommand
+    public class RelayCommand : ICommand
     {
         private readonly Action<object> _execute;
         private readonly Predicate<object> _canExecute;
