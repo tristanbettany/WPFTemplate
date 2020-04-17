@@ -3,6 +3,9 @@
                     xmlns:local="clr-namespace:WPFTemplate.Styles">
 
     <Color x:Key="C_Pink">#FE4365</Color>
+    <Color x:Key="C_Black">#000000</Color>
+    
     <SolidColorBrush x:Key="B_Pink" Color="{StaticResource C_Pink}" />
+    <SolidColorBrush x:Key="B_Black" Color="{StaticResource C_Black}" />
 
 </ResourceDictionary>

@@ -8,13 +8,13 @@
         Title="Hello World" Height="450" Width="800">
     
     <StackPanel VerticalAlignment="Center">
-        <TextBlock 
-            Text="{Binding HelloWorld}"
+        <Button 
+            x:Name="HelloWorldBtn"
+            Content="Hello World"
+            Style="{StaticResource S_ExampleButton}"
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
-            Foreground="{StaticResource B_Pink}"
-            FontSize="40"
-            FontWeight="Bold"/>
+            Command="{Binding HelloWorldCommand}"/>
     </StackPanel>
     
 </Window>

@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
+using WPFTemplate.Common.Commands;
 using WPFTemplate.Common.ViewModels;
 
 namespace WPFTemplate.ViewModels
@@ -7,11 +9,18 @@ namespace WPFTemplate.ViewModels
     {
         private Window _window;
 
-        public string HelloWorld { get; set; } = "Hello World";
+        public RelayCommand HelloWorldCommand { get; set; }
 
         public MainViewModel(Window window)
         {
             _window = window;
+
+            HelloWorldCommand = new RelayCommand(HelloWorld);
+        }
+
+        private void HelloWorld(object obj)
+        {
+            MessageBox.Show("Hello World");
         }
     }
 }
